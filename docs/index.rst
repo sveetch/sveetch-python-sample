@@ -7,7 +7,7 @@
 Sveetch Python sample
 =====================
 
-A project example created from cookiecutter-sveetch-python.
+A project example created from `cookiecutter-sveetch-python <https://github.com/sveetch/cookiecutter-sveetch-python>`_.
 
 Links
 *****
