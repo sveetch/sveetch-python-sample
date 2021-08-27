@@ -63,7 +63,6 @@ class FixturesSettingsTestMixin(object):
             TESTS=self.tests_path,
             FIXTURES=self.fixtures_path,
             VERSION=sample.__version__,
-            USER_AGENT=sample.USER_AGENT,
         )
 
 

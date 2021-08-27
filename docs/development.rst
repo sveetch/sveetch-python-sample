@@ -58,28 +58,33 @@ Tox
 To ease development against multiple Python versions a tox configuration has
 been added. You are strongly encouraged to use it to test your pull requests.
 
-Before using it you will need to install tox, it is recommended to install it
-at your system level (tox dependancy is not in requirements): ::
+Before using it you will need to install tox, you need to install it: ::
 
-    sudo pip install tox
+    .venv/bin/pip install tox
 
-Then go in the ``sveetch-python-sample`` directory, where the
-``setup.py`` and ``tox.ini`` live and execute tox: ::
+Then execute tox: ::
 
-    tox
+    .venv/bin/tox
+
+Tox is a common utility which you may install globally on your system to avoid
+installing it each time in your virtual environments.
 
 Documentation
 -------------
 
-Use the Makefile action ``livedocs`` to serve documentation and automatically
-rebuild it when you change documentation files.
+You can easily build the documentation from one Makefile action: ::
 
-When environnement is activated, you can use following command from ``docs/``
-directory: ::
+    make docs
+
+There is Makefile action ``livedocs`` to serve documentation and automatically
+rebuild it when you change documentation files: ::
 
     make livedocs
 
-And go on ``http://localhost:8002/`` or your server machine IP with port 8002.
+Then go on ``http://localhost:8002/`` or your server machine IP with port 8002.
+
+Note that you need to build the documentation at least once before using
+``livedocs``.
 
 Releasing
 ---------

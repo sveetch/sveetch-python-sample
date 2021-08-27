@@ -10,8 +10,6 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
 
 # Get the module version
 from sample import __version__ as sample_version
@@ -20,7 +18,7 @@ from sample import __version__ as sample_version
 # -- Project information -----------------------------------------------------
 
 project = 'sveetch-python-sample'
-copyright = '2020, David Thenon'
+copyright = '2021, David Thenon'
 author = 'David Thenon'
 
 # The short X.Y version
