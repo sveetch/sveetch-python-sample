@@ -4,6 +4,7 @@ PIP=$(VENV_PATH)/bin/pip
 FLAKE=$(VENV_PATH)/bin/flake8
 PYTEST=$(VENV_PATH)/bin/pytest
 SPHINX_RELOAD=$(VENV_PATH)/bin/python sphinx_reload.py
+TOX=$(VENV_PATH)/bin/tox
 TWINE=$(VENV_PATH)/bin/twine
 
 PACKAGE_NAME=sveetch-python-sample
@@ -26,6 +27,7 @@ help:
 	@echo
 	@echo "  flake               -- to launch Flake8 checking"
 	@echo "  test                -- to launch base test suite using Pytest"
+	@echo "  tox                 -- to launch tests for every Tox environments"
 	@echo "  quality             -- to launch Flake8 checking, tests suites, documentation building, freeze dependancies and check release"
 	@echo
 	@echo "  check-release       -- to check package release before uploading it to PyPi"
@@ -134,8 +136,14 @@ check-release: build-package
 	$(TWINE) check dist/*
 .PHONY: check-release
 
+tox:
+	@echo ""
+	@echo "==== Launch all Tox environments ===="
+	@echo ""
+	$(TOX)
+.PHONY: tox
 
-quality: test flake docs freeze-dependencies check-release
+quality: test flake docs check-release freeze-dependencies
 	@echo ""
 	@echo "♥ ♥ Everything should be fine ♥ ♥"
 	@echo ""

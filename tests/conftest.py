@@ -66,14 +66,14 @@ class FixturesSettingsTestMixin(object):
         )
 
 
-@pytest.fixture(scope="session")
-def temp_builds_dir(tmpdir_factory):
+@pytest.fixture(scope="function")
+def temp_builds_dir(tmpdir):
     """
-    Shortand to prepare a temporary build directory where to create temporary
-    content from tests.
+    Prepare a temporary build directory.
+
+    DEPRECATED: You should use instead directly the "tmpdir" fixture in your tests.
     """
-    fn = tmpdir_factory.mktemp("builds")
-    return fn
+    return tmpdir
 
 
 @pytest.fixture(scope="module")
