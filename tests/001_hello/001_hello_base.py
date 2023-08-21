@@ -1,7 +1,7 @@
 import pytest
 
 from sample.hello import HelloBase
-from sample.exceptions import DummyError
+from sample.exceptions import AppOperationError
 
 
 def test_default_name():
@@ -42,7 +42,7 @@ def test_bye():
     """
     builder = HelloBase()
 
-    with pytest.raises(DummyError) as excinfo:
+    with pytest.raises(AppOperationError) as excinfo:
         builder.bye()
 
     assert "I don't like to say goodbye." == str(excinfo.value)

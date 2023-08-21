@@ -8,14 +8,11 @@
 .. _livereload: https://livereload.readthedocs.io
 .. _twine: https://twine.readthedocs.io
 
-.. _intro_development:
+.. _development_intro:
 
 ===========
 Development
 ===========
-
-Development requirements
-************************
 
 sveetch-python-sample is developed with:
 
@@ -25,26 +22,58 @@ sveetch-python-sample is developed with:
   *Google style*);
 * `tox`_ to run tests on various environments;
 
-Every requirements are available in package extra requirements in section
-``dev``.
+Every requirements are available in package extra requirements.
 
-.. _install_development:
+.. _development_install:
 
-Install for development
-***********************
 
-First ensure you have `pip`_ and `virtualenv`_ packages installed then
-type: ::
+System requirements
+*******************
+
+This will requires `Python`, `pip`_, `virtualenv`_, *GNU make* and some other common
+system packages.
+
+Lists below are the required basic development system packages and some other optional
+ones.
+
+.. Warning::
+   Package names may differ depending your system.
+
+* Git;
+* Python (according version to the package setup);
+* ``python-dev``;
+* ``make``;
+
+.. Hint::
+   If your system does not have the right Python version as the default one, you should
+   learn to use something like `pyenv <https://github.com/pyenv/pyenv>`_.
+
+On Linux distribution
+    You will install them from your common package manager like ``apt`` for Debian
+    based distributions: ::
+
+        apt install python-dev make
+
+On macOS
+    Recommended way is to use ``brew`` utility for system packages, some names
+    can vary.
+
+On Windows
+    Windows is supported but some things may need some tricks on your own.
+
+
+Deployment
+**********
+
+Once requirements are ready you can use the following commands: ::
 
     git clone https://github.com/sveetch/sveetch-python-sample.git
     cd sveetch-python-sample
     make install
 
-sveetch-python-sample will be installed in editable mode from the
-latest commit on master branch with some development tools.
 
 Unittests
----------
+*********
 
 Unittests are made to works on `Pytest`_, a shortcut in Makefile is available
 to start them on your current development install: ::
@@ -53,20 +82,21 @@ to start them on your current development install: ::
 
 
 Tox
----
+***
 
 To ease development against multiple Python versions a tox configuration has
 been added. You are strongly encouraged to use it to test your pull requests.
 
 Just execute Tox: ::
 
-    make test
+    make tox
 
 This will run tests for all configured Tox environments, it may takes some time so you
 may use it only before releasing as a final check.
 
+
 Documentation
--------------
+*************
 
 You can easily build the documentation from one Makefile action: ::
 
@@ -79,18 +109,19 @@ rebuild it when you change documentation files: ::
 
 Then go on ``http://localhost:8002/`` or your server machine IP with port 8002.
 
-Note that you need to build the documentation at least once before using
-``livedocs``.
+.. Note::
+    You need to build the documentation at least once before using  ``livedocs``.
+
 
 Releasing
----------
+*********
 
 Before releasing, you must ensure about quality, use the command below to run every
 quality check tasks: ::
 
     make quality
 
-If quality is correct and after you have correctly push all your commits
+If quality is correct and after you have correctly pushed all your commits
 you can proceed to release: ::
 
     make release
@@ -100,9 +131,10 @@ You will have to
 `configure your Pypi account <https://twine.readthedocs.io/en/latest/#configuration>`_
 on your machine to avoid to input it each time.
 
-Contribution
-------------
 
-* Every new feature or changed behavior must pass tests, Flake8 code quality
-  and must be documented.
-* Every feature or behavior must be compatible for all supported environment.
+Contribution
+************
+
+* Every new feature or changed behavior must pass all quality tasks and must be
+  documented (at least docstrings);
+* Every feature or behavior must be compatible for all supported environment;

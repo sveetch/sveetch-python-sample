@@ -1,8 +1,5 @@
 """
 Main entrance to commandline actions
-
-Since Click use function docstring to build its help content, no command
-function are documented.
 """
 import click
 

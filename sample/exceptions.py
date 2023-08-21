@@ -1,13 +1,9 @@
-# -*- coding: utf-8 -*-
 """
-Exceptions
-==========
-
 Specific application exceptions.
 """
 
 
-class MyAppBaseException(Exception):
+class SveetchPythonSampleBaseException(Exception):
     """
     Exception base.
 
@@ -17,8 +13,8 @@ class MyAppBaseException(Exception):
     pass
 
 
-class DummyError(MyAppBaseException):
+class AppOperationError(SveetchPythonSampleBaseException):
     """
-    Dummy exception sample to raise from your code.
+    Sample exception to raise from your code.
     """
     pass

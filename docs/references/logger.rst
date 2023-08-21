@@ -1,4 +1,7 @@
-.. _intro_core_logger:
+.. _references_logger_intro:
+
+Logging
+=======
 
 .. automodule:: sample.logger
     :members:

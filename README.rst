@@ -5,12 +5,13 @@
 Sveetch Python sample
 =====================
 
-A project example created from cookiecutter-sveetch-python.
+A project example created from
+`cookiecutter-sveetch-python <https://github.com/sveetch/cookiecutter-sveetch-python>`_.
 
-Dependancies
+Dependencies
 ************
 
-* `Python`_>=3.6;
+* `Python`_>=3.8;
 * `Click`_>=8.0;
 
 Links

@@ -1,4 +1,7 @@
-.. _intro_core_hello:
+.. _references_hello_intro:
+
+Hello world
+===========
 
 .. automodule:: sample.hello
     :members:

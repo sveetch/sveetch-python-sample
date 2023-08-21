@@ -1,4 +1,7 @@
-.. _intro_core_exceptions:
+.. _references_exceptions_intro:
+
+Exceptions
+==========
 
 .. automodule:: sample.exceptions
     :members:

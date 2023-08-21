@@ -1,7 +1,3 @@
-"""
-Logging
-=======
-"""
 import logging
 
 import colorlog

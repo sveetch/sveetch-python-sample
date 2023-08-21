@@ -1,0 +1,18 @@
+{
+    "__class_name": "SveetchPythonSample",
+    "_cookiecutter_sveetch_python_version": "0.4.0",
+    "_output_dir": "/home/emencia/Projects/Apps/Cookies-dev/Python/dist",
+    "_repo_dir": ".",
+    "_template": ".",
+    "app_name": "sample",
+    "author_email": "sveetch@gmail.com",
+    "author_name": "David Thenon",
+    "author_username": "sveetch",
+    "include_cli": true,
+    "init_git_repository": false,
+    "package_name": "sveetch-python-sample",
+    "project_name": "Sveetch Python sample",
+    "project_short_description": "A project example created from cookiecutter-sveetch-python.",
+    "pypi_username": "sveetch",
+    "version": "0.4.0"
+}
