@@ -1,6 +1,6 @@
 {
     "__class_name": "SveetchPythonSample",
-    "_cookiecutter_sveetch_python_version": "0.4.0",
+    "_cookiecutter_sveetch_python_version": "0.4.1",
     "_output_dir": "/home/emencia/Projects/Apps/Cookies-dev/Python/dist",
     "_repo_dir": ".",
     "_template": ".",
@@ -14,5 +14,5 @@
     "project_name": "Sveetch Python sample",
     "project_short_description": "A project example created from cookiecutter-sveetch-python.",
     "pypi_username": "sveetch",
-    "version": "0.4.0"
+    "version": "0.4.1"
 }

@@ -1,1 +1,1 @@
-sveetch-python-sample
+sveetch-python-sample[doc]
