@@ -1,12 +1,12 @@
-# Frozen requirement versions from '0.4.1' installation
+# Frozen requirement versions from '0.4.2' installation
 click==8.1.7
 colorama==0.4.6
 colorlog==6.7.0
 flake8==6.1.0
 furo==2023.7.26
 livereload==2.6.3
-pytest==7.4.0
-Sphinx==7.2.2
+pytest==7.4.2
+Sphinx==7.2.6
 sphinx-copybutton==0.5.2
-tox==4.10.0
+tox==4.11.3
 twine==4.0.2

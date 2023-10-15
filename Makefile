@@ -100,7 +100,7 @@ install: venv
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Install everything for development <---$(FORMATRESET)\n"
 	@echo ""
-	$(PIP_BIN) install -e .[dev,quality,doc]
+	$(PIP_BIN) install -e .[dev,quality,doc,doc-live]
 .PHONY: install
 
 docs:
